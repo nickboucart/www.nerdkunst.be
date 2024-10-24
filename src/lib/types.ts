@@ -5,4 +5,5 @@ export type Post = {
 	date: string
 	tags: string[]
 	draft: boolean
+	image: string
 }

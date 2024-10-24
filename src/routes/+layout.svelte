@@ -1,11 +1,12 @@
 <script lang="ts">
 	import * as config from '$lib/config';
+    import {getImageUrl} from '$lib/images'
 	import '../app.css';
 	import { page } from '$app/stores';
 	import Footer from './Footer.svelte';
 	import Header from './Header.svelte';
 
-	$: imageName = $page.data.meta ? '../../src/lib/assets/' + $page.data.meta.image : '../../src/lib/assets/vierkanten.png';
+	$: imageName = $page.data.meta ? getImageUrl($page.data.meta.image) : getImageUrl('vierkanten.png');
 	$: title = $page.data.meta ? $page.data.meta.title : config.title
 	$: description = $page.data.meta? $page.data.meta.description : config.description;
 </script>

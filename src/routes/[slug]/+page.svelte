@@ -12,21 +12,21 @@
 </svelte:head>
 
 <article>
-  <!-- Title -->
-	<hgroup>
-		<h1>{data.meta.title}</h1>
-		<p>Published at {formatDate(data.meta.date)}</p>
-	</hgroup>
+
 
   <!-- Tags -->
-	<div class="tags">
+	<!-- <div class="tags">
 		{#each data.meta.tags as tag}
 			<span class="surface-4">&num;{tag}</span>
 		{/each}
-	</div>
+	</div> -->
 
   <!-- Post -->
 	<div class="prose">
 		<svelte:component this={data.content} />
+	</div>
+
+    <div class="flex justify-center text-sm">
+		<p>Gepubliceerd op {formatDate(data.meta.date)}</p>
 	</div>
 </article>

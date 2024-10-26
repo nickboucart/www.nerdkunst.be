@@ -1,6 +1,4 @@
 <script lang="ts">
-    import type { Post } from '$lib/types'
-	import { formatDate } from '$lib/utils'
     import {getImageUrl} from '$lib/images'
 	export let data
 

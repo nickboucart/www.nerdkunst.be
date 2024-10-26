@@ -7,3 +7,8 @@ export type Post = {
 	draft: boolean
 	image: string
 }
+
+export type ExampleImage = {
+	fileName: string,
+	title: string,
+}

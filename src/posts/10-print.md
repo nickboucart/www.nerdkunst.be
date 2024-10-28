@@ -13,7 +13,7 @@ draft: false
     import P5 from '$lib/components/P5.svelte';
     import ExampleImages from '$lib/components/ExampleImages.svelte';
 
-    const sketch1 = `
+    let sketch1 = `
 const size = 15;
 let x = 0;
 let y = 0;

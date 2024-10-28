@@ -23,4 +23,4 @@ Kijk hieronder naar enkele voorbeelden, ga aan de slag met de turorials en word 
 
 ## Recente artikels
 
-<Posts data={data} />
+<Posts posts={data.posts} limit="5" />

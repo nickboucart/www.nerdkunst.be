@@ -1,16 +1,14 @@
 ---
-title: Over Ons
+title: Welkom bij Nerdkunst.be
 image: vierkant.png
-description: De mensen achter nerdkunst.be
+description: Het verhaal achter nerdkunst.be | Een creatieve mix van kunst, programmeren en wetenschap
 ---
+Nerdkunst.be is het creatieve project van Nick Boucart, geboren uit zijn ervaring met CoderDojo Halle. CoderDojo’s zijn workshops waar kinderen en jongeren onder begeleiding van enthousiaste vrijwilligers hun eerste stappen zetten in de wereld van programmeren. Veel jongeren beginnen met Scratch, een visuele programmeertaal waarmee ze in no-time hun eerste interactieve projecten maken. Want zeg nu zelf, hoe cool is het om al binnen een halfuur een kat over je scherm te laten lopen?
 
-Het idee voor nerdkunst.be is ontstaan vanuit CoderDojo Halle. Een coderdojo is een workshop waar kinderen en jongeren, onder begeleiding van vrijwillers, zelf dingen programmeren. Vaak starten de jongeren met [Scratch](https://scratch.mit.edu/). Met een relatief eenvoudige blokkentaal leren ze zo de basis van programmeren: als-dan, lussen, variabelen, enz. Scratch is heel visueel, je krijgt onmiddellijk feedback van je werk, want zeg nu zelf: wat is er cooler dan in je eerste half uurtje programmeren al een kat over je scherm te laten lopen?
+Maar [Scratch](https://scratch.mit.edu/) kent zijn grenzen. Zodra de jongeren klaar zijn voor een grotere uitdaging, introduceren we ze in de wereld van tekstgebaseerd programmeren. Hier komt p5.js in beeld – een Javascript-library die perfect is om visuele creaties te maken, van gekleurde vierkanten en cirkels tot geluidseffecten. p5.js wordt ook door digitale artiesten gebruikt voor het maken van echte kunstwerken.
 
-Eens de jongeren scratch wat ontgroeien, en ze langzaam klaar zijn om tekstgebaseerd te programmeren, wordt het lastiger om hen iets aan te bieden dat niet te moeilijk is, en bij voorkeur visueel. Daarom zijn we beginnen experimenten met [p5js](https://p5js.org/). P5js is een library in Javascript, die toelaat om snel visuele dingen te maken. Denk aan ingekleurde vierkanten, circels tot zelfs geluiden. P5js wordt door digitale artiesten soms gebruikt om heuse kunstwerken te maken.
+Met een achtergrond in fysica en wiskunde, brengt Nick een extra dimensie in zijn tutorials. Nerdkunst.be is dus dé plek waar wiskundige en natuurkundige concepten omgetoverd worden tot visuele, creatieve projecten. Het doel? Toegankelijke tutorials schrijven die jongeren inspireren, zowel tijdens de CoderDojo als gewoon thuis.
 
-Daarnaast heeft Nick Boucart, de lead coach van CoderDojo Halle en oprichter van nerdkunst.be een achtergrond in fysica en de bijbehorende wiskunde. En laat p5js nu ook nog een omgeving zijn die  wiskundige/fysica-gerelateerde concepten relatief makkelijk kan omzetten in visuals. 
+In onze dojo in Halle moedigen we jongeren aan om hun creaties te delen en tonen we die trots in onze galerij. Wie weet, misschien komt er ooit wel een echte tentoonstelling van!
 
-Vandaar dus het idee om op nerdkunst.be tutorials te schrijven die, als alles meezit, gebruikt kunnen worden door jongeren tijdens coderdojo's, of gewoon thuis. In onze dojo in Halle moedigen we de jongeren aan om hun eigen creaties te delen, en stellen we die tentoon in de gallerij. Wie weet doen we ooit wel onze eigen tentoonstelling.
-
-Wil je meer weten over CoderDojo, kijk dan zeker op [CoderDojo Belgium](https://coderdojobelgium.be) voor een dojo in jouw buurt.
-Zelf nerdkunst gemaakt? Of wil je gewoon iets meer weten over coole wetenschapsvisuals? Neem dan contact op met halle@coderdojobelgium.be.
+Benieuwd naar CoderDojo? Neem dan zeker een kijkje op [www.coderdojobelgium.be](https://www.coderdojobelgium.be). CoderDojo Belgium om een dojo bij jou in de buurt te vinden. Heb je zelf nerdkunst gemaakt of wil je meer weten over coole wetenschapvisualisaties? Stuur ons gerust een berichtje op halle@coderdojobelgium.be.

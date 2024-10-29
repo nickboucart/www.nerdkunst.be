@@ -27,7 +27,6 @@
     function runScript() {
       let params = new URLSearchParams(window.location.search);
       let sketch = params.get('sketch'); 
-      console.log(sketch);
       sketch = sketch + ' ; new p5();'
       var scriptElm = document.createElement('script');
       scriptElm.setAttribute('type', 'text/javascript');

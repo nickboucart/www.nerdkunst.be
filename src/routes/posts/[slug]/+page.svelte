@@ -12,8 +12,6 @@
 </svelte:head>
 
 <article>
-
-
   <!-- Tags -->
 	<!-- <div class="tags">
 		{#each data.meta.tags as tag}

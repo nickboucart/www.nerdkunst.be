@@ -8,7 +8,7 @@
 
 <div class="flex flex-col md:flex-row justify-center flex-wrap gap-10">
     {#each posts.slice(0, limit) as post}
-      <a class="card card-hover card-compact bg-base-100 basis-1/3 hover:shadow-xl no-underline" href="/{post.slug}">
+      <a class="card card-hover card-compact bg-base-100 basis-1/3 hover:shadow-xl no-underline" href="/posts/{post.slug}">
         <figure>    
           <img
             src="{getImageUrl(post.image)}"

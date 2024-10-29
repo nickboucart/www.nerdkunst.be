@@ -14,7 +14,7 @@
 	<div class="navbar-end">
 		<div class="flex-none">
 			<ul class="menu menu-lg menu-horizontal px-1">
-				<li><a href="/artikels">Artikels</a></li>
+				<li><a href="/posts">Artikels</a></li>
 				<li><a href="/over-ons">Over ons</a></li>
 			</ul>
 		</div>

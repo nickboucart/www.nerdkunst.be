@@ -49,7 +49,7 @@ function draw() {
 
 Een tijdje terug hadden we hier al [een post over lijnen](/posts/lijn-patronen.ml), in dit artikel gaan we opnieuw met lijnen aan de slag. We vertrekken van legendarische lijn code, ooit geschreven voor de Commodore 64, die misschien wel aan de wieg staat wat we vandaag computerkunst noemen.
 
-## 1 lijn code, oneindig veel variarties.
+## 1 lijn code, oneindig veel variaties.
 Volgens [Wikepedia](https://en.wikipedia.org/wiki/One-liner_program) is de code hieronder 1 van de meest bekende one-liners in de geschiedenis van het programmeren. Er is zelfs een [volldig boek](https://10print.org/) aan gewijd.
 
 ```basic

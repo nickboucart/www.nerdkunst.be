@@ -31,7 +31,7 @@ Door de variabelen n en d te wijzigen, en het script opnieuw te laten lopen, kri
 ## We maken er een eeuwigdurende rozentekenaar van.
 We kunnen nu verder werken op dit. Stel dat we de waarden van d en n laten variëren, krijgen we telkens een andere tekening. Als we nu ook nog de grijswaarde zachten aanpassen van volldige gelijk aan de achtergrondkleur, tot bijna zwart, krijgen we een leuk effect waarbij er telkens een andere roos verschijnt.
 
-<P5 code={sketch2} />>
+<P5 code={sketch2} />
 
 Uren kijkplezier gegarandeerd ;)
 
@@ -115,6 +115,4 @@ function tekenRoos(n, d, s) {
   }
   endShape();
 }
-`
-
-</script>
+`</script>

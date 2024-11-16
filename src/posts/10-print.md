@@ -52,7 +52,7 @@ Een tijdje terug hadden we hier al [een post over lijnen](/posts/lijn-patronen.m
 ## 1 lijn code, oneindig veel variaties.
 Volgens [Wikepedia](https://en.wikipedia.org/wiki/One-liner_program) is de code hieronder 1 van de meest bekende one-liners in de geschiedenis van het programmeren. Er is zelfs een [volldig boek](https://10print.org/) aan gewijd.
 
-```basic
+```shell
 10 PRINT CHR$(205.5+RND(1)); : GOTO 10
 ```
 Deze lijn BASIC code voor de Commodor 64 tekent willekeurig een ```/``` of een ```\``` op het scherm. Het effect dat je dan krijgt is een soort van doolhof zoals je dat kan zien bovenaan deze post.

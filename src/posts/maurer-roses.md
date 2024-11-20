@@ -13,8 +13,9 @@ Een Maurer roos is een wiskundige formule voor het eerst beschreven door [Peter 
 De formule voor zo'n roos is niet zo moeilijk. Ze gebruikt polaire coördinaten en ziet er als volgt uit:
 
 De roos wordt opgebouwd uit 361 punten, waarbij telkens geldt dat:
-
-    (sin(nk), k) (k = 0, d, 2d, 3d, ..., 360d),
+```
+(sin(nk), k) (k = 0, d, 2d, 3d, ..., 360d)
+```
 
 waarbij d een positief getal is. d is uitgedrukt in graden.
 

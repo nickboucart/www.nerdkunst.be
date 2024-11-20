@@ -20,7 +20,7 @@
 	</div> -->
 
   <!-- Post -->
-	<div class="prose mx-auto">
+	<div class="mx-auto">
 		<svelte:component this={data.content} />
 	</div>
 

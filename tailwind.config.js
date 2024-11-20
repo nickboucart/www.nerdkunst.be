@@ -2,6 +2,10 @@
 export default {
   content: ['./src/**/*.{html,js,svelte,ts}', "./node_modules/svhighlight/**/*.svelte"],
   theme: {
+
+    fontFamily: {
+      sans: ["'Source Code Pro'", 'sans-serif']
+    },
     extend: {},
   },
   plugins: [

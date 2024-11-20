@@ -17,7 +17,7 @@
 	<Header image={imageName} title={title} description={description} />
 
 	<main class="flex-grow mx-auto my-20 w-10/12">
-		<div class="mx-auto bg-neutral-content py-10 px-20 prose lg:prose-lg max-w-none">
+		<div class="mx-auto bg-neutral-content lg:py-10 lg:px-20 prose prose-lg max-w-none">
 			<slot />
 		</div>
 	</main>

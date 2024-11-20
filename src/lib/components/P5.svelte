@@ -11,8 +11,8 @@
 </script>
 
 
-<div class="md:-mx-44  grid grid-cols-1 md:grid-cols-2 gap-10 justify-center content-center not-prose">	
-    <CodeBlock {code} language="javascript" dimensions="w-full" />
+<div class="md:-mx-32 grid grid-cols-1 md:grid-cols-2 justify-center content-evenly not-prose">	
+    <CodeBlock {code} language="javascript" dimensions="w-[600px]" />
 
-    <iframe class="w-full aspect-square mt-2" title="p5 sketch" src={'/p5/index.html?sketch=' + getSketchForUrl()} />
+    <iframe class="aspect-square w-[600px] mt-2" title="p5 sketch" src={'/p5/index.html?sketch=' + getSketchForUrl()} />
 </div>

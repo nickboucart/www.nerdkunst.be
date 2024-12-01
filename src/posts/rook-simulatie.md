@@ -1,14 +1,14 @@
-+++
-title = 'Een coole simulatie van opstijgende rook'
-date = "2024-02-07"
-draft = false
-image = "rook-simulatie.png"
-description = "Een p5js tutorial waarin we een simulatie maken van opstijgende rook"
-+++
+---
+title: "Een coole simulatie van opstijgende rook"
+date: "2024-02-07"
+draff: false
+image: "rook-simulatie.png"
+description: "Een p5js tutorial waarin we een simulatie maken van opstijgende rook"
+tags: ["p5js", "simulatie", "tutorial"]
+---
 
 In deze tutorial maken we een simulatie van een opstijgende rook. We zullen dat stap-voor-stap opbouwen, te beginnen met 1 enkel rokend deeltje, om dan meer rookdeeltjes toe te voegen. 
 
-<!--more-->
 
 ## Even iets over het rookeffect
 Laten we eerst even bekijken wat een rookeffect is. Rook is een soort wolkje, dat langzaam opstijgt, eventueel wat gedragen door de wind, en dat terwijl het opstijgt zich uitspreidt en verdwijnt.
@@ -50,7 +50,7 @@ Om het uizicht van de rookdeeltjes realistischer te maken, zullen we ook een sne
 
 De code ziet er als volgt uit:
 
-<P5 code={sketch4} />
+<P5 code={sketch4}/>
 
 
 ## Conclusie

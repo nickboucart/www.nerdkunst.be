@@ -3,7 +3,6 @@
 
 <head>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/addons/p5.sound.min.js"></script>
   <meta charset="utf-8" />
 
 </head>
@@ -26,16 +25,29 @@
   <script type="text/javascript">
     function runScript() {
       let params = new URLSearchParams(window.location.search);
-      let sketch = params.get('sketch'); 
+      let extraLibs = params.get('extralibs');
+      if (extraLibs) {
+        let libs = extraLibs.split(";");
+
+        for (let lib of libs) {
+          var extraScript = document.createElement('script');
+          extraScript.setAttribute('src', lib);
+          document.head.appendChild(extraScript);
+
+        }
+      }
+
+      let sketch = params.get('sketch');
       sketch = sketch + ' ; new p5();'
       var scriptElm = document.createElement('script');
       scriptElm.setAttribute('type', 'text/javascript');
       //var inlineCode = document.createTextNode(sketch);
-      scriptElm.textContent = sketch; 
+      scriptElm.textContent = sketch;
       document.body.appendChild(scriptElm);
     }
 
-    window.addEventListener( "load", runScript );
+    window.addEventListener("load", runScript);
   </script>
 </body>
+
 </html>

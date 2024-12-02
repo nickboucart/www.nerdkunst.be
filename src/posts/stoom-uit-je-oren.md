@@ -43,13 +43,13 @@ De volgende sketch toont hoe je die ml5js bibliotheek kan gebruiken. Het PoseNet
 
 
 
-<P5 code={sketch2} htmlPage="ml5.html" />
+<P5 code={sketch2} htmlPage="ml5/index.html" />
 
 ## Stoom uit je oren.
 Wohaa, hoe cool is dit allemaal? Dat is toch echt wel al knap, niet? Nu gaan we nog een stapje verder. We gaan de code uit onze rooksimulator mee in deze sketch copiëren, en in de plaats van die cickeltjes op de oren te plakken, laten we de rook vertrekken vanop die plaats. Je zal zien dat ik ook zijwind heb ingevoerd, dit om de rook wat meer in naar links en rechts te laten gaan. Door er een klein beetje random aan toe te voegen, geeft dat ook nog een extra organisch effect. Ik varieer ook de kleur van de individuele rookdeeltjes wat, zodat de rookwolk nog wat echter is.
 
 
-<P5 code={sketch3} htmlPage="ml5.html" />
+<P5 code={sketch3} htmlPage="ml5/index.html" />
 
 ## Conclusie
 In dit artikel hebben we artificiële intelligentie gebruikt om stoom uit onze oren te laten komen. Dat bleek eigenlijk niet eens zo moeilijk, als je het juiste AI model weet te gebruiken. Je zou hier nog op kunnen verder bouwen door bijvoorbeeld een grote kauwgombel te laten verschijnen en knappen, of door een sikje op het gezicht te plakken. Je zou ook een ander AI model kunnen gebruiken dat nog meer punten op het lichaam kan herkennen. De mogelijkheden zijn eindeloos. Veel plezier ermee!!

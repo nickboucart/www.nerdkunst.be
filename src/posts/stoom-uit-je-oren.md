@@ -4,7 +4,7 @@ date: "2024-03-09"
 tags: ['artificiële intelligentie', 'installatie', 'interactieve kunst', 'tutorial', 'ml5js', 'p5js']
 image: "stoom-uit-oren.png"
 description: "Gebruik een AI-model om lichaamshoudingen te herkennen"
-draft: true
+draft: false
 ---
 In een [vorige post](/posts/rook-simulatie) zag je hoe je een rooksimulatie kunt maken. In deze post gaan we daarop verderwerken: we gaan het spreekwoord "_er komt stoom uit zijn oren_" even heel letterlijk nemen :) We gaan daarvoor een AI-model gebruiken om beelden gemaakt met onze webcam te herkennen.
 
@@ -39,17 +39,17 @@ We gaan nu de ml5js bibliotheek mee laden in onze sketch. Als je deze tutorials 
 
 De volgende sketch toont hoe je die ml5js bibliotheek kan gebruiken. Het PoseNet AI model verwacht een beeld als input, en geeft als output een lijst van _poses_. Een _pose_ is een object dat een lichaamshouding weergeeft. PoseNet beschrijft een lichaamshouding aan de hand van 17 punten, zoals de neus, linkeroor, rechteroor, linker- en rechterschouder, enz. Voor elk van deze punten geeft PoseNet de coordinaten en een score tussen 0 en 1 om aan te gegven hoe waarschijnlijk het is dat dit punt ook daadwerkelijk klopt. 
 
-<Image image={{fileName: 'https://camo.githubusercontent.com/c3641b718d7e613b2ce111a6a4575e88ca35a60cb325efdd9113c453b2a09301/68747470733a2f2f73746f726167652e676f6f676c65617069732e636f6d2f6d6f76656e65742f636f636f2d6b6579706f696e74732d3530302e706e67', title: 'Overzicht van de 17 PoseNet keypoints' }} />
+<Image image={{fileName: 'https://docs.ml5js.org/assets/BodyPose-MoveNet-Keypoints.png', title: 'Overzicht van de 17 PoseNet keypoints' }} />
 
 
 
-<P5 code={sketch2}  extraLibraries={["https://unpkg.com/ml5@1/dist/ml5.min.js"]}/>
+<P5 code={sketch2} htmlPage="ml5.html" />
 
 ## Stoom uit je oren.
 Wohaa, hoe cool is dit allemaal? Dat is toch echt wel al knap, niet? Nu gaan we nog een stapje verder. We gaan de code uit onze rooksimulator mee in deze sketch copiëren, en in de plaats van die cickeltjes op de oren te plakken, laten we de rook vertrekken vanop die plaats. Je zal zien dat ik ook zijwind heb ingevoerd, dit om de rook wat meer in naar links en rechts te laten gaan. Door er een klein beetje random aan toe te voegen, geeft dat ook nog een extra organisch effect. Ik varieer ook de kleur van de individuele rookdeeltjes wat, zodat de rookwolk nog wat echter is.
 
 
-<P5 code={sketch3} extraLibraries={["https://unpkg.com/ml5@1/dist/ml5.min.js"]}/>
+<P5 code={sketch3} htmlPage="ml5.html" />
 
 ## Conclusie
 In dit artikel hebben we artificiële intelligentie gebruikt om stoom uit onze oren te laten komen. Dat bleek eigenlijk niet eens zo moeilijk, als je het juiste AI model weet te gebruiken. Je zou hier nog op kunnen verder bouwen door bijvoorbeeld een grote kauwgombel te laten verschijnen en knappen, of door een sikje op het gezicht te plakken. Je zou ook een ander AI model kunnen gebruiken dat nog meer punten op het lichaam kan herkennen. De mogelijkheden zijn eindeloos. Veel plezier ermee!!
@@ -72,30 +72,34 @@ function draw() {
 
 let sketch2 = `let video;
 let pose;
+let bodyPose;
+
+function preload() {
+  // Load the bodyPose model
+  bodyPose = ml5.bodyPose();
+}
+
 
 function setup() {
   createCanvas(640, 480);
   video = createCapture(VIDEO);
   video.hide();
-  poseNet = ml5.poseNet(video, modelGeladen);
-  poseNet.on('pose', gotPoses);
-}
-function modelGeladen() {
-  console.log('poseNet is klaar');
+  bodyPose.detectStart(video, gotPoses);
 }
 
 function gotPoses(poses) {
   // poseNet kan poses van meerdere mensen op een beeld herkennen. We gebruiken enkel de eerste persoon
   if (poses.length > 0) {
-    pose = poses[0].pose;
+    pose = poses[0];
   }
 }
 
 function draw() {
   image(video, 0, 0);
     if (pose) {
-    let linkerOor = pose.leftEar;
-    let rechterOor = pose.rightEar;
+
+    let linkerOor = pose.left_ear;
+    let rechterOor = pose.right_ear;
     fill('green');
     circle(linkerOor.x, linkerOor.y, 50);
     fill('blue');
@@ -105,7 +109,12 @@ function draw() {
 
 let sketch3 = `let video;
 let pose;
-let deeltjes;
+let bodyPose;
+
+function preload() {
+  // Load the bodyPose model
+  bodyPose = ml5.bodyPose();
+}
 
 class Deeltje {
   constructor(x, y, zijwind) {
@@ -135,17 +144,13 @@ function setup() {
   deeltjes = [];
   video = createCapture(VIDEO);
   video.hide();
-  poseNet = ml5.poseNet(video, modelGeladen);
-  poseNet.on("pose", gotPoses);
-}
-function modelGeladen() {
-  console.log("poseNet is klaar");
+  bodyPose.detectStart(video, gotPoses);
 }
 
 function gotPoses(poses) {
   // poseNet kan poses van meerdere mensen op een beeld herkennen. We gebruiken enkel de eerste persoon
   if (poses.length > 0) {
-    pose = poses[0].pose;
+    pose = poses[0];
   }
 }
 
@@ -154,8 +159,8 @@ function draw() {
   image(video, 0, 0);
 
   if (pose) {
-    let linkerOor = pose.leftEar;
-    let rechterOor = pose.rightEar;
+    let linkerOor = pose.left_ear;
+    let rechterOor = pose.right_ear;
     let deeltje = new Deeltje(linkerOor.x, linkerOor.y, 1);
     deeltjes.push(deeltje);
     deeltje = new Deeltje(rechterOor.x, rechterOor.y, -1);
@@ -166,5 +171,4 @@ function draw() {
     deeltjes[i].update();
   }
 }`
-
  </script>

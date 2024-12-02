@@ -3,6 +3,7 @@
 
 <head>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.js"></script>
+  <script src="https://unpkg.com/ml5@1/dist/ml5.min.js"></script>
   <meta charset="utf-8" />
 
 </head>
@@ -25,7 +26,6 @@
   <script type="text/javascript">
     function runScript() {
       let params = new URLSearchParams(window.location.search);
-      
       let sketch = params.get('sketch');
       sketch = sketch + ' ; new p5();'
       var scriptElm = document.createElement('script');

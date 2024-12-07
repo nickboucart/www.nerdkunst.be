@@ -32,7 +32,7 @@
 				<li><a href="/over-ons">Over ons</a></li>
 			</ul>
 		</div>
-		<a class="navbar-item" href="/">NerdKunst</a>
+		<a class="navbar-item font-bold text-2xl" href="/">NerdKunst</a>
 	</div>
 	<div class="navbar-end hidden lg:flex">
 		<div class="flex-none">

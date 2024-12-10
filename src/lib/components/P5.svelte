@@ -36,6 +36,6 @@
             <a class="btn" href="{getEntireUrlForIframe(code, htmlPage)}" target={name}><CirclePlay /></a>
             <a class="btn" href="{getUrlForReadyIframe()}" target={name}><CirclePause /></a>
         </div>
-    <iframe loading="lazy" class="aspect-square mt-2 w-full mx-auto" {name} title="p5 sketch" src={getUrlForReadyIframe()} />
+    <iframe class="aspect-square mt-2 w-full mx-auto" {name} title="p5 sketch" src={getUrlForReadyIframe()} />
 </div>
 </div>

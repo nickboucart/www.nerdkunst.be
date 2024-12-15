@@ -6,7 +6,7 @@ image: "vierkanten.png"
 description: "Een tutorial waarin we vierkanten inkleuren. We gebruiken willekeurige kleuren, kleurenpaletten en perlin noise."
 draft: false
 ---
-In deze tutorial gaan we aan de slag met patronen die bestaan uit vierkanten. Meer interesse in patronen met lijntjes? Kijk snel naar het [patronen met lijnen](/lijn-patronen) artikel.   
+In deze tutorial gaan we aan de slag met patronen die bestaan uit vierkanten. Meer interesse in patronen met lijntjes? Kijk snel naar het [patronen met lijnen](/posts/lijn-patronen) artikel.   
 
 ## Een canvas vol vierkanten
 Voor we volop gaan experimenteren met kleuren en groottes, en zo de Mondriaan in ons loslaten, bouwen we eerst aan de basis: we plaatsen een aantal vierkanten op een regelmatige manier op het canvas. We maken dat aantal vierkant aanpasbaar met een variabele, zo kunnen we eens we de code hebben snel wat experimenteren met een interessante grootte voor de vierkanten. Voorlopig kleuren we de vierkanten in met een lichtgrijze tint, en tekenen we de lijnen van de vierkantjes in het wit. In de code hieronder zal je ook zien dat we ```rectMode(CENTER)``` gebruiken: in comibinatie met de ```square()``` betekent dat dat we voor elk vierkant enkel het middelpunt van het vierkant moeten aangeven en de grootte van 1 zijde. Speel gerust even met de parameter ```vierkantenPerRij```, je zit direct dat de grootte van de vierkanten veranderen.

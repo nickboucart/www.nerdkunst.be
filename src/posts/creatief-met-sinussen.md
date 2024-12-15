@@ -95,11 +95,11 @@ function nieuweInput() {
   loop();
 }`
     </script>
-In een [vorige post](/over-hoeken-sinussen-en-cosinussen) hebben we het gehad over hoeken, cosinussen en sinussen. Vandaag gaan we wat verder op dat thema en maken we allerhande goniometrische kunst.
+In een [vorige post](/posts/over-hoeken-sinussen-en-cosinussen) hebben we het gehad over hoeken, cosinussen en sinussen. Vandaag gaan we wat verder op dat thema en maken we allerhande goniometrische kunst.
 
 <!--more-->
 ## Even herhalen.
-Er was eens, de cirkel. Zoals aangegeven in [het dit artikel over hoeken](/over-hoeken-sinussen-en-cosinussen), kan je de coördinaten van de punten op een cirkel vinden door de cosinus en sinus te nemen van de hoek die dat punt op de cirkel maakt met de x-as. We kunnen deze eigenschap gebruiken om een cirkel te maken: in plaats van de ```circle```-functie te gebruiken, kan je ook een sketch maken die een hoek laat variëren van 0-360 graden, en dan op basis van die hoek bereken je de coördinaten van een punt op de cirkel. Je tekent dan een puntje op die plek. 
+Er was eens, de cirkel. Zoals aangegeven in [het dit artikel over hoeken](/posts/over-hoeken-sinussen-en-cosinussen), kan je de coördinaten van de punten op een cirkel vinden door de cosinus en sinus te nemen van de hoek die dat punt op de cirkel maakt met de x-as. We kunnen deze eigenschap gebruiken om een cirkel te maken: in plaats van de ```circle```-functie te gebruiken, kan je ook een sketch maken die een hoek laat variëren van 0-360 graden, en dan op basis van die hoek bereken je de coördinaten van een punt op de cirkel. Je tekent dan een puntje op die plek. 
 De volgende sketch toont dat. Om het ietsje interessanter te maken, geef ik de punten ook een kleurtje. 
 
 <P5 code={sketch1} />

@@ -7,7 +7,7 @@ tags:
  - p5
  - truchet
 image: truchet-tegel.png
-description: Patronen maken met Truchet stempels
+description: Tutorial waarin we met Truchet tegels allerhande patronen maken.
 draft: false
 ---
 

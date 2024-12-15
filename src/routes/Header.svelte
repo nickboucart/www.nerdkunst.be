@@ -4,6 +4,15 @@
 	export let description;
 </script>
 
+<svelte:head>
+	<title>{title}</title>
+	<meta property="og:title" content={title}>
+	<meta property="og:type" content="article" />
+	<meta property="og:image" content={image}>
+	<meta name="twitter:card" content="summary_large_image">
+	<meta property="og:description" content={description}>
+</svelte:head>
+
 <div class="navbar px-10">
 	<div class="navbar-start">
 		<div class="dropdown">

@@ -10,11 +10,6 @@ image: "vierkanten.png"
 
 	export let data
 </script>
-
-<svelte:head>
-	<title>{config.title}</title>
-</svelte:head>
-
 ## Welkom op NerdKunst.be. 
 
 Hier vind je voorbeelden en tutorials over hoe je al programmerend kunst maakt. Dat wordt __generative art__ genoemd. Je zal versteld staan hoe een paar eenvoudige wiskundige formules fascinerende grafische effecten kunnen opleveren. 

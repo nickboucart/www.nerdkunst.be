@@ -11,10 +11,6 @@ image: "vierkanten.png"
 	export let data
 </script>
 
-<svelte:head>
-	<title>{config.title}</title>
-</svelte:head>
-
 ## Alle tutorials en artikels. 
 
 Hier vind je een overzicht van al onze artikels en tutorials. Duik er snel in ;) 

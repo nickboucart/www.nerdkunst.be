@@ -12,7 +12,7 @@ description: In deze korte tutorial bouwen we een variatie op de Truchet Tegels.
 draft: false
 ---
 
-In deze korte tutorial gaan we bouwen we verder op het artikel over [Truchet tegels](truchet-tegels). In plaats van te werken met mooi ronde bogen, gaan we die bogen wat "oprekken" of in een deukje zetten.
+In deze korte tutorial bouwen we verder op het artikel over [Truchet tegels](truchet-tegels). In plaats van te werken met mooi ronde bogen, gaan we die bogen wat "oprekken" of in een deukje zetten.
 
 
 ## Tegels met uitgerokken bogen

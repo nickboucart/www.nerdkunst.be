@@ -15,7 +15,7 @@
             alt="{post.title}" />
         </figure>
         <div class="card-body">
-          <h2 class="card-title not-prose">{post.title}</h2>
+          <h2 class="card-title not-prose capitalize">{post.title}</h2>
           <p>{post.description}</p>
         </div>
     </a>
